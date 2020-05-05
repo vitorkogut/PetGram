@@ -12,6 +12,7 @@
             <file>file:/C:/PetGram/database/migrations/2020_04_30_173048_create_profiles_table.php</file>
             <file>file:/C:/PetGram/resources/views/posts/show.blade.php</file>
             <file>file:/C:/PetGram/app/Http/Controllers/ProfilesController.php</file>
+            <file>file:/C:/PetGram/.env</file>
         </group>
     </open-files>
 </project-private>
