@@ -7,15 +7,15 @@
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
                 height: 100vh;
-                
+
                 background: linear-gradient(135deg, #61a1a1, #aaaaaa);
                 margin: 0;
                 background-size: 400% 400%;
                 animation: BackgroundGradient 10s ease infinite;
-                
+
             }
-            
-            
+
+
             @keyframes BackgroundGradient{
                 0%{background-position: 0% 50%;}
                 50%{background-position: 100% 50%;}
@@ -63,15 +63,15 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
-            
+
             .caixa_texto{
                 padding: 15px;
                 background: lightblue;
-                background-clip: border-box;  
+                background-clip: border-box;
             }
-            
+
         </style>
-            
+
 
 
 
@@ -81,8 +81,8 @@
 <div class="container">
     <div class="row">
             <img src="https://www.petlove.com.br/dicas/wp-content/uploads/2020/01/Gato_chorando-1280x720.jpg" class="rounded-circle" style="width: 250px; height: 250px">
-            
-            <div class="pt-1 pl-4"> 
+
+            <div class="pt-1 pl-4">
                 <div class="d-flex justify-content-between align-baseline">
                     <a style="font-size: 40"> <strong> {{$user->username}}</strong></a>
                     <a href="/p/create">Post Novo</a>
@@ -91,10 +91,10 @@
                 <h4 style="font-size: 20px">Seguidores: <strong>0</strong></h4>
                 <h4 style="font-size: 20px">Seguindo: <strong>0</strong></h4>
                 <h4 style="font-size: 20px">Posts: <strong> {{$user->posts->count()}} </strong></h4>
-                <h5>{{$user->profile->description}}</h5>
-            </div>   
+
+            </div>
     </div>
-    
+
     <div class="row pt-5">
         @foreach($user->posts as $post)
             <div class="col-4 pb-4">
@@ -103,12 +103,12 @@
                 </a>
             </div>
         @endforeach
-        
-        
-        
+
+
+
     </div>
-    
-    
+
+
 </div>
 
 @endsection
